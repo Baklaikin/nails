@@ -1,0 +1,98 @@
+:root{
+  --main-color:rgb(6, 200, 161);
+  --main-txt-color:rgb(9, 11, 23);
+  --text-color:rgb(208, 255, 246);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: var(--black-color);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.logo {
+  border-radius: 4px;
+}
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1280px;
+  padding: 12px 36px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+
+.header {
+  width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-name {
+  color: var(--text-color);
+  font-size: 72px;
+}
+
+.logo-text{
+  color: var(--main-txt-color);
+  font-size: 36px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation > li:not(:last-child){
+  margin-right: 10px;
+}
+
+.navigation a {
+  color: var(--main-txt-color);
+}
