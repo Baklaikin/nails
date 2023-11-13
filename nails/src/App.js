@@ -1,9 +1,12 @@
-import Header from "./views/header";
-import Wrapper from "./views/wrapper";
+import Header from "./components/header/Header";
 import "./App.css";
 
 function App() {
-  return <Wrapper children={<Header />} />;
+  return (
+    <div className="container">
+      <Header />
+    </div>
+  );
 }
 
 export default App;
