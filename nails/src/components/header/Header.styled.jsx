@@ -1,9 +1,6 @@
 import styled from "styled-components";
+import { sizes } from "../../utils/sizes";
 
-export const HeroContainer = styled.div`
-position: relative;
-
-`;
 
 export const NavList = styled.ul`
 display: flex;
@@ -30,17 +27,26 @@ transition: transform 500ms ease;
 & a:hover {
     color: var(--text-color);
 }
+
+@media ${sizes.mobile}{
+    display: none;
+}
 `;
 
 export const NavWrapper = styled.div`
-position: absolute;
+padding: 24px 16px;
 width: 100%;
-padding: 32px 48px;
-z-index: 1;
-
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+@media ${sizes.tablet}{
+padding: 32px 24px;
+}
+
+@media ${sizes.desktop}{
+padding: 48px 32px;
+}
 `
 
 export const Hero = styled.div`
@@ -52,3 +58,5 @@ align-items: center;
 border-radius: 20px;
 background-color: var(--main-color);
 `;
+
+export const HeaderContainer = styled.div``;
