@@ -34,8 +34,9 @@ transition: transform 500ms ease;
 `;
 
 export const NavWrapper = styled.div`
+margin: 0 auto;
 padding: 24px 16px;
-width: 100%;
+max-width: 1280px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -45,7 +46,7 @@ padding: 32px 24px;
 }
 
 @media ${sizes.desktop}{
-padding: 48px 32px;
+padding: 36px 32px;
 }
 `
 
