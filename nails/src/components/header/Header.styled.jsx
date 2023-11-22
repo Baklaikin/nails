@@ -12,12 +12,13 @@ transform: scale(1);
 transition: transform 500ms ease;
 }
 
-& > li:hover {
+& > li:hover,
+& > li:focus {
     transform: scale(1.15);
 }
 
 & > li:not(:last-child){
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 & a {
@@ -25,7 +26,7 @@ transition: transform 500ms ease;
     transition: color 500ms ease;
 }
 & a:hover {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 @media ${sizes.mobile}{
@@ -46,7 +47,7 @@ padding: 32px 24px;
 }
 
 @media ${sizes.desktop}{
-padding: 36px 32px;
+padding: 30px 32px;
 }
 `
 
